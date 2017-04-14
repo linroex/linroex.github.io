@@ -21,6 +21,7 @@
     ga('send', 'pageview');
 
   </script>
+
   <!-- Facebook Pixel Code -->
   <script>
       !function (f, b, e, v, n, t, s) {
@@ -42,6 +43,27 @@
     /></noscript>
   <!-- DO NOT MODIFY -->
   <!-- End Facebook Pixel Code -->
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '200500763787392',
+        xfbml: true,
+        version: 'v2.8'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
+
   <style>
     html {
       height: 100%;
@@ -128,7 +150,8 @@
       ga("send", "event", "Info Link", "Click", target);
       fbq("track", "ClickInfoLink", {
         target: target
-      })
+      });
+      FB.AppEvents.logEvent('ClickInfoLink', null, {target: target});
     })
   </script>
 </body>
