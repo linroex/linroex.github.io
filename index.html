@@ -4,30 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <title>About Karl Lin</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center; 
+      align-items: center;
+      margin: 0;
+      background: url("images/IMG_3759.jpg") no-repeat center center fixed;
+      background-size: cover;
+
+    }
+
+    #main {
+      width: 600px;
+      height: 500px;
+      background: rgba(237,109,0,0.7);
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid white;
+      box-shadow: 0 0 0 10px rgba( 237,109,0 , 0.7);
+      color: white;
+    }
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-size: 60px;
+      
+      letter-spacing: 5px;
+      text-align: center;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border: 5px solid white;
+      border-radius: 100%;
+    }
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 50%;
+      padding-left: 0px;
+    }
+    ul li{
+      list-style: none;
+      font-size: 35px;
+      
+    }
+    li a {
+      color: #2f2f2f;
+    }
+
+    li a:hover {
+      color: white;
+    }
+
+
+  </style>
 </head>
 
 <body>
-  <h3>Karl Lin</h3>
-  <p>林熙哲、聽風</p>
-  <p>請見諒，這只是一個暫時性的頁面，若有興趣了解我，可以到以下連結：</p>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/linroex">Linkedin</a></li>
-    <li><a href="https://www.facebook.com/linroex">Facebook</a></li>
-    <li><a href="https://coder.tw/">Blog</a></li>
-    <li><a href="https://github.com/linroex">Github</a></li>
-    <li><a href="https://ntust.me/jwsbn">Free Time</a></li>
-  </ul>
-  <p>歡迎追蹤 Facebook，只會同意見面過的好友邀請。</p>
-  <h3>Contact</h3>
-  <ul>
-    <li>Email: linroex@coder.tw</li>
-  </ul>
-  <br>
-  <h3>Secirity</h3>
-  <b>GPG Public Key</b>
-  <p>2015/12/29 - 2019/12/29</p>
-  <a href="/129E4F8F.asc">129E4F8F</a>
-  <p>我的信件都會以 S/MIME 簽署，若無簽署則可能為偽造。</p>
+  <div id="main">
+    <img src="images/IMG_1658.jpg" alt="">
+    <h1>林熙哲</h1>
+    
+    <ul>
+      <li><a target="_blank" href="https://www.linkedin.com/in/linroex"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="https://www.facebook.com/linroex"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="https://coder.tw/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="https://github.com/linroex"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="https://ntust.me/jwsbn"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="http://s.ntust.me/resume.pdn"><i class="fa fa-file" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+ 
 
 </body>
 
