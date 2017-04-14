@@ -8,6 +8,7 @@
   <meta property="og:image" content="images/IMG_3759.jpg">
   <meta property="og:description" content="非典型工程師，以程式設計做筆去解決生活中遇到的問題，擅長後端開發和基本的前端，除了程式設計外更喜歡跑去荒郊野外看看風景讀讀小說，恩，是個科技人，自然少不了 Gogoro。">
   <meta property="og:url" content="http://me.coder.tw">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -91,17 +92,21 @@
     <img src="images/IMG_1658.jpg" alt="">
     <h1>林熙哲</h1>
     
-    <ul>
-      <li><a target="_blank" href="https://www.linkedin.com/in/linroex"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-      <li><a target="_blank" href="https://www.facebook.com/linroex"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-      <li><a target="_blank" href="https://coder.tw/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
-      <li><a target="_blank" href="https://github.com/linroex"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-      <li><a target="_blank" href="https://ntust.me/jwsbn"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
-      <li><a target="_blank" href="http://s.ntust.me/resume.pdf"><i class="fa fa-file" aria-hidden="true"></i></a></li>
+    <ul class="social_area">
+      <li><a data-target="linkedin" target="_blank" href="https://www.linkedin.com/in/linroex"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      <li><a data-target="fb" target="_blank" href="https://www.facebook.com/linroex"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+      <li><a data-target="blog" target="_blank" href="https://coder.tw/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+      <li><a data-target="github" target="_blank" href="https://github.com/linroex"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+      <li><a data-target="calendar" target="_blank" href="https://ntust.me/jwsbn"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+      <li><a data-target="cv" target="_blank" href="http://s.ntust.me/resume.pdf"><i class="fa fa-file" aria-hidden="true"></i></a></li>
     </ul>
   </div>
- 
-
+  <script>
+    $(".social_area a").click(()=>{
+      var target = e.target.closest("a").getAttribute("data-target");
+      ga("send", "event", "Info Link", "Click", target);
+    })
+  </script>
 </body>
 
 </html>
