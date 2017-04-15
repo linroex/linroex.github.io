@@ -145,7 +145,7 @@
     <img src="images/IMG_1658.jpg" title="Karl Lin / 聽風 / linroex">
     <h1 title="Karl Lin / 聽風 / linroex">林熙哲</h1>
 
-    <div class="contact"><a title="All Email I Sent Will Sign By COMODO S/MIME." onclick="copy('linroex@coder.tw');alert('已複製信箱')">linroex@coder.tw</a> / <a download href="files/129E4F8F.asc" title="GPG Expire: 2019/12/29">129E4F8F</a></div>
+    <div class="contact"><a data-target="email" title="All Email I Sent Will Sign By COMODO S/MIME." onclick="copy('linroex@coder.tw');alert('已複製信箱')">linroex@coder.tw</a> / <a download data-target="gpgkey" href="files/129E4F8F.asc" title="GPG Expire: 2019/12/29">129E4F8F</a></div>
     
     <ul class="social_area">
       <li><a data-target="linkedin" target="_blank" href="https://www.linkedin.com/in/linroex"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
@@ -173,13 +173,25 @@
       clip_area.remove();
     }
 
+    function send_event(event, action, label){
+      ga("send", "event", event, action, label);
+      fbq("trackCustom", action + event, {
+        target: label
+      });
+      FB.AppEvents.logEvent(action + "_" + event, null, {target: label});
+    }
+
+    $(".contact a").click((e)=>{
+      if(e.target.getAttribute("data-target") == 'email'){
+        send_event("Email", "Copy", "email");
+      }else if(e.target.getAttribute("data-target") == 'gpgkey'){
+        send_event("GPGKey", "Download", "gpgkey");
+      }
+    });
+
     $(".social_area a").click((e)=>{
       var target = e.target.closest("a").getAttribute("data-target");
-      ga("send", "event", "Info Link", "Click", target);
-      fbq("trackCustom", "ClickInfoLink", {
-        target: target
-      });
-      FB.AppEvents.logEvent('ClickInfoLink', null, {target: target});
+      send_event("InfoLink", "Click", target);
     })
   </script>
 </body>
