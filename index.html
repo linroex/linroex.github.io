@@ -145,7 +145,7 @@
     </ul>
   </div>
   <script>
-    $(".social_area a").click(()=>{
+    $(".social_area a").click((e)=>{
       var target = e.target.closest("a").getAttribute("data-target");
       ga("send", "event", "Info Link", "Click", target);
       fbq("track", "ClickInfoLink", {
