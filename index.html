@@ -93,6 +93,13 @@
       color: white;
       margin: 0 10px 0 10px;
     }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      color: black;
+    }
     h1 {
       margin-top: 20px;
       margin-bottom: 0px;
@@ -102,8 +109,8 @@
       text-align: center;
     }
     img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border: 5px solid white;
       border-radius: 100%;
     }
@@ -135,6 +142,8 @@
   <div id="main">
     <img src="images/IMG_1658.jpg" alt="">
     <h1>林熙哲</h1>
+
+    <div class="contact"><a title="All Email I Sent Will Sign By COMODO S/MIME." onclick="copy('linroex@coder.tw');alert('已複製信箱')">linroex@coder.tw</a> / <a download href="files/129E4F8F.asc" title="GPG Expire: 2019/12/29">129E4F8F</a></div>
     
     <ul class="social_area">
       <li><a data-target="linkedin" target="_blank" href="https://www.linkedin.com/in/linroex"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
@@ -144,8 +153,24 @@
       <li><a data-target="calendar" target="_blank" href="https://ntust.me/jwsbn"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
       <li><a data-target="cv" target="_blank" href="http://s.ntust.me/resume.pdf"><i class="fa fa-file" aria-hidden="true"></i></a></li>
     </ul>
+
   </div>
+  <!--main end-->
+
   <script>
+    function copy(s) {
+      $('body').append('<textarea id="clip_area"></textarea>');
+
+      var clip_area = $('#clip_area');
+
+      clip_area.text(s);
+      clip_area.select();
+
+      document.execCommand('copy');
+
+      clip_area.remove();
+    }
+
     $(".social_area a").click((e)=>{
       var target = e.target.closest("a").getAttribute("data-target");
       ga("send", "event", "Info Link", "Click", target);
