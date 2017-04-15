@@ -148,7 +148,7 @@
     $(".social_area a").click((e)=>{
       var target = e.target.closest("a").getAttribute("data-target");
       ga("send", "event", "Info Link", "Click", target);
-      fbq("track", "ClickInfoLink", {
+      fbq("trackCustom", "ClickInfoLink", {
         target: target
       });
       FB.AppEvents.logEvent('ClickInfoLink', null, {target: target});
