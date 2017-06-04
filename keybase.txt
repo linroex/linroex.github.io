@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/linroex
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://me.coder.tw
+  * I am linroex (https://keybase.io/linroex) on keybase.
+  * I have a public key ASAoAY_9Tv86xEmM-q82wH6CeQJCEAw84Y3LIKg6V4dlrQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012028018ffd4eff3ac4498cfaaf36c07e82790242100c3ce18dcb20a83a578765ad0a",
+            "host": "keybase.io",
+            "kid": "012028018ffd4eff3ac4498cfaaf36c07e82790242100c3ce18dcb20a83a578765ad0a",
+            "uid": "3ac2255994473fa18e167628d7351219",
+            "username": "linroex"
+        },
+        "service": {
+            "hostname": "me.coder.tw",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.23"
+    },
+    "ctime": 1496551600,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1496551520,
+        "hash": "9dfc453e8410ef925e3562e837a2b0f3c2fb4a183075d34a9be0c85715c130e1047ad6b87b1310034fdbf7dbbc1d336a18391c87ef2061e5355bfd46da90491b",
+        "seqno": 1141549
+    },
+    "prev": "8b241748cc602010bd956918cab8c75a6607c9b12e6e335d85b07bf8d13490a1",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKAGP/U7/OsRJjPqvNsB+gnkCQhAMPOGNyyCoOleHZa0Kp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMjgwMThmZmQ0ZWZmM2FjNDQ5OGNmYWFmMzZjMDdlODI3OTAyNDIxMDBjM2NlMThkY2IyMGE4M2E1Nzg3NjVhZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjgwMThmZmQ0ZWZmM2FjNDQ5OGNmYWFmMzZjMDdlODI3OTAyNDIxMDBjM2NlMThkY2IyMGE4M2E1Nzg3NjVhZDBhIiwidWlkIjoiM2FjMjI1NTk5NDQ3M2ZhMThlMTY3NjI4ZDczNTEyMTkiLCJ1c2VybmFtZSI6ImxpbnJvZXgifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1lLmNvZGVyLnR3IiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMyJ9LCJjdGltZSI6MTQ5NjU1MTYwMCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk2NTUxNTIwLCJoYXNoIjoiOWRmYzQ1M2U4NDEwZWY5MjVlMzU2MmU4MzdhMmIwZjNjMmZiNGExODMwNzVkMzRhOWJlMGM4NTcxNWMxMzBlMTA0N2FkNmI4N2IxMzEwMDM0ZmRiZjdkYmJjMWQzMzZhMTgzOTFjODdlZjIwNjFlNTM1NWJmZDQ2ZGE5MDQ5MWIiLCJzZXFubyI6MTE0MTU0OX0sInByZXYiOiI4YjI0MTc0OGNjNjAyMDEwYmQ5NTY5MThjYWI4Yzc1YTY2MDdjOWIxMmU2ZTMzNWQ4NWIwN2JmOGQxMzQ5MGExIiwic2Vxbm8iOjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAWoxSMeIpeSd1oQbAZRR+3TD47/pQfQ29c2LmDe8osCNg1PiRL4071VveS4aImIB5e5VLMZuCNX98d0CTlPLqCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINIM6eWqIPhs3ozifMfITLu4pD+MNexGOCHeApgVjRWJo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/linroex
+
+==================================================================
